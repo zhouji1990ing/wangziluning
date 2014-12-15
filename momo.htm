@@ -89,16 +89,23 @@
 			maxSize: 60, 	//雪花的最大尺寸
 			newOn: 300		//雪花出现的频率 这个数值越小雪花越多
 		});
-		var count = 6000;
-		for(i =1;i<5;i++){
-			
-			setTimeout(function () {
-				console.log("#dialogue"+i);
-		        $("#dialogue"+i).show();
-		    }, count);
-			
-			//count = count+6000;
-		}
+		
+		setTimeout(function () {
+	        $("#dialogue1").fadeIn(2000);
+	    }, 5000);
+		
+		setTimeout(function () {
+	        $("#dialogue2").fadeIn(2000);
+	    }, 10000);
+		
+		setTimeout(function () {
+	        $("#dialogue3").fadeIn(2000);
+	    }, 20000);
+		
+		setTimeout(function () {
+	        $("#dialogue4").fadeIn(2000);
+	    }, 30000);
+		
 	});
 	function adjustCodePosition() {
 //		$('#code').css("margin-top", ($("#garden").height() - $("#code").height()) / 2);

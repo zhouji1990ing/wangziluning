@@ -56,7 +56,11 @@
 				</div>
 			</div>
 		</div>
-		<a href="momo.htm" style="float: right;">初识</a>
+	</div>
+	<div id="imgheart" style="display: none;">
+		<a href="momo.htm">
+			<img title="初识" alt="初识" src="images/heart.gif" style="position:fixed;right:0px; bottom:0px; width:150px;height: 150px;"/>
+		</a>
 	</div>
 <embed src="sound/music.mp3" hidden="true" autostart="true" loop="true">
 	<script type="text/javascript">
@@ -91,7 +95,11 @@
 			adjustCodePosition();
 			$("#code").typewriter();
 		}
-
+		
+		setTimeout(function () {
+			$('#imgheart').fadeIn(5000);
+		}, 12000);
+		
 	</script>
 </body>
 </html>

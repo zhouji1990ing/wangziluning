@@ -327,7 +327,7 @@ function showHongKong() {
                     point: {lng: 114.192448, lat: 22.309636}
                 }
             ];
-            loopWin(hkphotos, 500, showHangZhou);
+            loopWin(hkphotos, 1000, showHangZhou);
         });
     }, 1000);
 }
@@ -356,7 +356,7 @@ function showHangZhou() {
                 {
                     title: '杭州之行',
                     content: '<img src="http://wangziluning.com/images/hangzhou4.jpg" width="294" height="379" alt="杭州之行" />',
-                    point: {lng: 118.171377, lat: 120.126814}
+                    point: {lng: 120.21995, lat: 30.292928}
                 },
                 {
                     title: '杭州之行',
@@ -370,51 +370,171 @@ function showHangZhou() {
                 },
                 {
                     title: '王总我要坐船！',
-                    content: '<img src="http://wangziluning.com/images/hongzhou7.jpg" width="313" height="419" alt="王总我要坐船！" />',
+                    content: '<img src="http://wangziluning.com/images/hongzhou7.jpg" width="434" height="326" alt="王总我要坐船！" />',
                     point: {lng: 120.163608, lat: 30.256}
                 }
             ];
-            loopWin(hzphotos, 1200, wannaTo);
+            loopWin(hzphotos, 1000, wannaTo);
         });
     }, 1000);
 }
 
 function wannaTo() {
     map.closeInfoWindow();
-    zoomTo(5, 1000, function() {
-        map.panTo(new BMap.Point(CN_CEN.lng, CN_CEN.lat));
+    zoomTo(13, 1000, function() {
+        map.panTo(new BMap.Point(JS_NJC.lng, JS_NJC.lat));
         map.setMapType(BMAP_HYBRID_MAP);
         setTimeout(function() {
             var wanna = [
                 {
                     title: '',
-                    content: '地图标上想去的地方，有一天，带着你去流浪。',
-                    point: CN_CEN
+                    content: '我们的记忆',
+                    point: JS_NJC
                 },
                 {
-                    title: '厦门',
-                    content: '<img src="http://wangziluning.com/images/Picture001.jpg" width="500" height="338" alt="wannaTo" />',
-                    point: {lng: 118.148154, lat: 24.497912}
+                    title: '先卖个萌~',
+                    content: '<img src="http://wangziluning.com/images/Picture001.jpg" width="256" height="341" alt="wannaTo" />',
+                    point: {lng: 118.772545, lat: 32.015569}
                 },
                 {
-                    title: '凤凰古镇',
-                    content: '<img src="http://wangziluning.com/images/Picture002.jpg" width="500" height="337" alt="wannaTo" />',
-                    point: {lng: 100.21191, lat: 26.928061}
+                    title: '你妹！就知道躲后面！',
+                    content: '<img src="http://wangziluning.com/images/Picture005.jpg" width="308" height="231" alt="wannaTo" />',
+                    point: {lng: 118.82806, lat: 31.949977}
                 },
                 {
-                    title: '桂林阳朔',
-                    content: '<img src="http://wangziluning.com/images/Picture003.jpg" width="499" height="399" alt="wannaTo" />',
-                    point: {lng: 110.503626, lat: 24.780932}
+                    title: '鸡鹅巷里的沙茶面',
+                    content: '<img src="http://wangziluning.com/images/Picture007.jpg" width="355" height="265" alt="wannaTo" />',
+                    point: {lng: 118.797203, lat: 32.054795}
                 },
                 {
-                    title: '西藏',
-                    content: '<img src="http://wangziluning.com/images/Picture005.jpg" width="500" height="400" alt="wannaTo" />',
-                    point: {lng: 91.115691, lat: 29.687083}
+                    title: '这是我最喜欢的一张自拍',
+                    content: '<img src="http://wangziluning.com/images/Picture008.jpg" width="354" height="266" alt="wannaTo" />',
+                    point: JS_NJC
                 },
                 {
-                    title: '杭州西湖',
-                    content: '<img src="http://wangziluning.com/images/Picture007.jpg" width="500" height="327" alt="wannaTo" />',
-                    point: {lng: 120.151946, lat: 30.250472}
+                    title: '偶尔虐你一下，拿你当苦力',
+                    content: '<img src="http://wangziluning.com/images/Picture009.jpg" width="288" height="384" alt="wannaTo" />',
+                    point: {lng: 118.787515, lat: 32.048502}
+                },
+                {
+                    title: '王总你的刀工时好时坏',
+                    content: '<img src="http://wangziluning.com/images/Picture012.jpg" width="304" height="228" alt="wannaTo" />',
+                    point: {lng: 118.794014, lat: 32.054241}
+                },
+                {
+                    title: '这些胡桃夹子是我给你的第一个惊喜吧',
+                    content: '<img src="http://wangziluning.com/images/Picture014.jpg" width="288" height="384" alt="wannaTo" />',
+                    point: {lng: 118.794014, lat: 32.054241}
+                },
+                {
+                    title: '刚认识的时候动不动就咬我',
+                    content: '<img src="http://wangziluning.com/images/Picture016.jpg" width="373" height="280" alt="wannaTo" />',
+                    point: LN_HOME
+                },
+                {
+                    title: '这个我能跳过嘛。本命年你送我的，结果本命年刚过没几天就弄丢了',
+                    content: '<img src="http://wangziluning.com/images/Picture018.jpg" width="288" height="384" alt="wannaTo" />',
+                    point: LN_HOME
+                },
+                {
+                    title: '第一次去你家，你笑的那么开心，我脸那么肥。。。',
+                    content: '<img src="http://wangziluning.com/images/Picture021.jpg" width="240" height="320" alt="wannaTo" />',
+                    point: {lng: 118.810269, lat: 31.948724}
+                },
+                {
+                    title: '偷吃被发现只能切个爱心草莓求原谅',
+                    content: '<img src="http://wangziluning.com/images/Picture028.jpg" width="371" height="279" alt="wannaTo" />',
+                    point: {lng: 118.794014, lat: 32.054241}
+                },
+                {
+                    title: '跑到江边吹江风。',
+                    content: '<img src="http://wangziluning.com/images/Picture030.jpg" width="329" height="186" alt="wannaTo" />',
+                    point: {lng: 118.823277, lat: 32.153146}
+                },
+                {
+                    title: '一起骚绿去郊游',
+                    content: '<img src="http://wangziluning.com/images/Picture034.jpg" width="212" height="374" alt="wannaTo" />',
+                    point: {lng: 118.787515, lat: 32.048502}
+                },
+                {
+                    title: '哎哟我去，怎么还有这图',
+                    content: '<img src="http://wangziluning.com/images/Picture036.jpg" width="372" height="279" alt="wannaTo" />',
+                    point: {lng: 118.787515, lat: 32.048502}
+                },
+                {
+                    title: '第六个一百天',
+                    content: '<img src="http://wangziluning.com/images/Picture038.jpg" width="360" height="270" alt="wannaTo" />',
+                    point: JS_NJC
+                },
+                {
+                    title: '你在北京出差还不忘记给我寄好吃的',
+                    content: '<img src="http://wangziluning.com/images/Picture041.jpg" width="384" height="271" alt="wannaTo" />',
+                    point: JS_NJC
+                },
+                {
+                    title: '骑行仙林时霸气的你',
+                    content: '<img src="http://wangziluning.com/images/Picture043.jpg" width="288" height="384" alt="wannaTo" />',
+                    point: {lng: 118.916334, lat: 32.105043}
+                },
+                {
+                    title: '这是你第一次参加我的家庭聚餐，自助餐只吃菜叶子！',
+                    content: '<img src="http://wangziluning.com/images/Picture050.jpg" width="288" height="384" alt="wannaTo" />',
+                    point: {lng: 118.772545, lat: 32.015569}
+                },
+                {
+                    title: '整理了下我们的小卡片',
+                    content: '<img src="http://wangziluning.com/images/Picture051.jpg" width="384" height="271" alt="wannaTo" />',
+                    point: {lng: 118.79379, lat: 32.053847}
+                },
+                {
+                    title: '王大妈去买菜咯',
+                    content: '<img src="http://wangziluning.com/images/Picture056.jpg" width="288" height="384" alt="wannaTo" />',
+                    point: {lng: 118.790679, lat: 32.057331}
+                },
+                {
+                    title: '你给的生日礼物',
+                    content: '<img src="http://wangziluning.com/images/Picture059.jpg" width="288" height="389" alt="wannaTo" />',
+                    point: JS_NJC
+                },
+                {
+                    title: '比比谁腿美！',
+                    content: '<img src="http://wangziluning.com/images/Picture064.jpg" width="271" height="384" alt="wannaTo" />',
+                    point: {lng: 118.790679, lat: 32.057331}
+                },
+                {
+                    title: '把两小家伙带回家的那天',
+                    content: '<img src="http://wangziluning.com/images/Picture068.jpg" width="271" height="384" alt="wannaTo" />',
+                    point: {lng: 118.79379, lat: 32.053847}
+                },
+                {
+                    title: '一个小手术，就算你工作那么忙，可还是天天来陪我，辛苦你了',
+                    content: '<img src="http://wangziluning.com/images/Picture069.jpg" width="271" height="384" alt="wannaTo" />',
+                    point: {lng: 118.79379, lat: 32.067942}
+                },
+                {
+                    title: '你口中萌萌哒睡姿',
+                    content: '<img src="http://wangziluning.com/images/Picture071.jpg" width="271" height="384" alt="wannaTo" />',
+                    point: {lng: 118.794014, lat: 32.054241}
+                },
+                {
+                    title: '王总求放过',
+                    content: '<img src="http://wangziluning.com/images/Picture075.jpg" width="374" height="280" alt="wannaTo" />',
+                    point: {lng: 118.780307, lat: 32.077521}
+                },
+                {
+                    title: '18家的墙面上肯定留下不少你的罪证',
+                    content: '<img src="http://wangziluning.com/images/Picture077.jpg" width="372" height="279" alt="wannaTo" />',
+                    point: {lng: 118.79379, lat: 32.053847}
+                },
+                {
+                    title: '山东行，见你的第一个闺蜜',
+                    content: '<img src="http://wangziluning.com/images/Picture079.jpg" width="258" height="356" alt="wannaTo" />',
+                    point: JS_NJC
+                },
+                {
+                    title: '杭州行这张脸出现在你曾经大学的附近是不是很不真实？哈哈哈',
+                    content: '<img src="http://wangziluning.com/images/Picture080.jpg" width="372" height="278" alt="wannaTo" />',
+                    point: JS_NJC
                 }
             ];
         loopWin(wanna, 1000, showMarkerText);
@@ -1236,7 +1356,33 @@ window.onload = function() {
         'http://wangziluning.com/images/Picture004.jpg',
         'http://wangziluning.com/images/Picture005.jpg',
 		'http://wangziluning.com/images/Picture006.jpg',
-        'http://wangziluning.com/images/Picture007.jpg'
+        'http://wangziluning.com/images/Picture007.jpg',
+        'http://wangziluning.com/images/Picture008.jpg',
+        'http://wangziluning.com/images/Picture009.jpg',
+        'http://wangziluning.com/images/Picture012.jpg',
+        'http://wangziluning.com/images/Picture014.jpg',
+        'http://wangziluning.com/images/Picture016.jpg',
+        'http://wangziluning.com/images/Picture018.jpg',
+        'http://wangziluning.com/images/Picture021.jpg',
+        'http://wangziluning.com/images/Picture030.jpg',
+        'http://wangziluning.com/images/Picture028.jpg',
+        'http://wangziluning.com/images/Picture034.jpg',
+        'http://wangziluning.com/images/Picture036.jpg',
+        'http://wangziluning.com/images/Picture038.jpg',
+        'http://wangziluning.com/images/Picture041.jpg',
+        'http://wangziluning.com/images/Picture043.jpg',
+        'http://wangziluning.com/images/Picture050.jpg',
+        'http://wangziluning.com/images/Picture051.jpg',
+        'http://wangziluning.com/images/Picture056.jpg',
+        'http://wangziluning.com/images/Picture059.jpg',
+        'http://wangziluning.com/images/Picture064.jpg',
+        'http://wangziluning.com/images/Picture068.jpg',
+        'http://wangziluning.com/images/Picture069.jpg',
+        'http://wangziluning.com/images/Picture071.jpg',
+        'http://wangziluning.com/images/Picture075.jpg',
+        'http://wangziluning.com/images/Picture077.jpg',
+        'http://wangziluning.com/images/Picture079.jpg',
+        'http://wangziluning.com/images/Picture080.jpg'
     ];
 
     soundManager.setup({

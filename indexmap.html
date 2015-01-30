@@ -391,9 +391,9 @@ function showHangZhou() {
 
 function wannaTo() {
     map.closeInfoWindow();
-    zoomTo(13, 1000, function() {
+    zoomTo(12, 1000, function() {
         map.panTo(new BMap.Point(JS_NJC.lng, JS_NJC.lat));
-        map.setMapType(BMAP_HYBRID_MAP);
+        //map.setMapType(BMAP_HYBRID_MAP);
         setTimeout(function() {
             var wanna = [
                 {
@@ -1260,7 +1260,7 @@ function showMarkerText() {
         zoomTo(9, 1000, function() {
             loopAddMarker(markerText, function() {
                 setTimeout(function() {
-                    slideDown('theEnd', 1000, function() {
+                    slideDown('theEnd', 500, function() {
                         var theEndText = '<div id="theEndText">Happy birthday to my dearest WangZi  --by LuNing<br />' + 
                                          '<button data-toggle="wshare" data-type="weibo">分享到微博</button>' + 
                                          '<button onclick="window.location.reload();">再看一次</button></div>';
@@ -1352,7 +1352,7 @@ window.onload = function() {
         'http://wangziluning.com/images/hangzhou7.jpg',
         'http://wangziluning.com/images/Hongkong1.jpg',
         'http://wangziluning.com/images/Hongkong2.jpg',
-        'http://wangziluning.com/images/Hongkong3.jpg',
+        'http://wangziluning.com/images/HongKong3.jpg',
         'http://wangziluning.com/images/huangshan1.jpg',
         'http://wangziluning.com/images/huangshan2.jpg',
         'http://wangziluning.com/images/huangshan3.jpg',

@@ -23,7 +23,7 @@
 	.back {
 		background-color: #F1EBEB;
 		width: 400px;
-		height: 250px;
+		height: 300px;
 		margin: 0px auto;
 	}
 	
@@ -102,20 +102,34 @@
 		
 		setTimeout(function () {
 	        $("#dialogue1").fadeIn(2000);
-	    }, 5000);
+	    }, 2500);
 		
 		setTimeout(function () {
 	        $("#dialogue2").fadeIn(2000);
-	    }, 10000);
+	    }, 5000);
 		
 		setTimeout(function () {
 	        $("#dialogue3").fadeIn(2000);
-	    }, 20000);
+	    }, 7500);
 		
 		setTimeout(function () {
 	        $("#dialogue4").fadeIn(2000);
-	    }, 30000);
+	    }, 10000);
 		
+		setTimeout(function () {
+	        $("#dialogue5").fadeIn(2000);
+	    }, 12500);
+		
+		setTimeout(function () {
+	        $("#dialogue6").fadeIn(2000);
+	    }, 15000);
+		
+		setTimeout(function () {
+	        $("#dialogue7").fadeIn(2000);
+	    }, 17500);
+		setTimeout(function () {
+			window.location.href="indexmap.html"
+	    }, 20000);
 	});
 	function adjustCodePosition() {
 //		$('#code').css("margin-top", ($("#garden").height() - $("#code").height()) / 2);
@@ -165,24 +179,11 @@
 	<div id="mainDiv">
 		<div id="code" style="">
 			<br/> <br/> <br/> <br/> <br/> 
-			<span class="comments center">初识</span>
-			<span class="comments">你见，或者不见我</span>
-			<span class="comments">我就在那里 </span>
-			<span class="comments">不悲不喜</span>
-			<span class="comments">你念，或者不念我 </span>
-			<span class="comments">情就在那里</span>
-			<span class="comments">不来不去</span>
-			<span class="comments">你爱，或者不爱我</span>
-			<span class="comments">爱就在那里 </span>
-			<span class="comments">不增不减</span>
-			<span class="comments">你跟，或者不跟我 </span>
-			<span class="comments">我的手就在你手里</span>
-			<span class="comments">不舍不弃 </span>
-			<span class="comments">来我的怀里</span>
-			<span class="comments">或者 </span>
-			<span class="comments">让我住进你的心里</span>
-			<span class="comments">默然 相爱 </span>
-			<span class="comments">寂静 欢喜</span>
+			<span class="comments center"><img src="images/headimggentleman.jpg" style="width: 42px; height: 42px; border-radius: 5px;"></span>
+			<span class="comments">昵称:动感超人007</span>
+			<span class="comments">陌陌号:xxxxxx</span>
+			<span class="comments">个性签名:16楼女神！！你在哪里！？</span>
+			<span class="comments">婚姻状态:未婚</span>
 		</div>
 		<div id="dialogue1"
 			style="width: 400px; height: 100%; margin: 0px auto; display: none;">
@@ -230,6 +231,45 @@
 					</div>
 					<div style="clear: both;"></div>
 				</div>
+				<br /> <br /> <br />
+				<!-- 对话4 -->
+				<div style="float: left; display: none;" id="dialogue5">
+					<div class="headimg" style="float: left">
+						<img src="images/headimglady.jpg"
+							style="width: 42px; height: 42px; border-radius: 5px;">
+					</div>
+					<div class="accept" style="line-height: 38px; width: 40px;">
+						<div class="arrow"></div>
+						<img src="images/pullnose.png" style="vertical-align: middle;">
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				<br /> <br /> <br />
+				<!-- 对话5 -->
+				<div style="float: right; display: none;" id="dialogue6">
+					<div class="send" style="line-height: 30px; width: 40px;">
+						<div class="arrow"></div>
+						<img src="images/smile.png" style="vertical-align: middle;">
+					</div>
+					<div class="headimg" style="float: right">
+						<img src="images/headimggentleman.jpg"
+							style="width: 42px; height: 42px; border-radius: 5px;">
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				<br /> <br /> <br /><br />
+				<!-- 对话6 -->
+				<div style="float: right; display: none;" id="dialogue7">
+					<div class="send" style="line-height: 30px; width: 70px;">
+						<div class="arrow"></div>
+						聊聊呗~
+					</div>
+					<div class="headimg" style="float: right">
+						<img src="images/headimggentleman.jpg"
+							style="width: 42px; height: 42px; border-radius: 5px;">
+					</div>
+					<div style="clear: both;"></div>
+				</div>
 			</div>
 			<div style="width: 400px; height: 384px; margin: 0px auto;position:relative">
 			<!-- <img src="images/smile.png" style="vertical-align: middle;"> -->
@@ -237,6 +277,7 @@
 				<img src="images/interface.jpg" style="width: 100%; height: 100%;">
 			</div>
 		</div>
+	</div>
 	</div>
 </body>
 

@@ -671,7 +671,7 @@ var markerText = [
 
 function addMarker(lng, lat) {
     var marker = new BMap.Marker( new BMap.Point(lng, lat) );
-    marker.setAnimation(BMAP_ANIMATION_DROP);
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE);
     map.addOverlay(marker)
 }
 

@@ -247,7 +247,6 @@ function panZoom_HEY() {
 }
 
 function panLNHOME() {
-    map.closeInfoWindow();
     zoomTo(19, 1000, function() {
         map.panTo(new BMap.Point(S_CENTER.lng, S_CENTER.lat));
         setTimeout(function() {

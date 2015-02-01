@@ -183,9 +183,9 @@ function loopWin(loopList, time, callback) {
         infoWindow.redraw();
         i++;
         if( loopList[i] ) {
-            var time = loopList[i].timeout || 3000;
+            var time = loopList[i].timeout || 2500;
         } else {
-            var time = 3000;
+            var time = 2500;
         }
         timeout = setTimeout(loopWinInner, time);
     }
@@ -247,6 +247,7 @@ function panZoom_HEY() {
 }
 
 function panLNHOME() {
+    map.closeInfoWindow();
     zoomTo(19, 1000, function() {
         map.panTo(new BMap.Point(S_CENTER.lng, S_CENTER.lat));
         setTimeout(function() {
@@ -561,7 +562,7 @@ var markerText = [
     			{
                     title: '认识你之后，这是我的变化',
                     content: '<img src="http://wangziluning.com/images/Picture002.jpg" width="384" height="362" alt="wannaTo" />',
-                    point: {lng: 118.790507, lat: 32.048055},
+                    point: {lng: 118.868171, lat: 32.058309},
                     flag :true
                 },
                 {
@@ -830,7 +831,7 @@ window.onload = function() {
         'http://wangziluning.com/images/Picture003.jpg',
         'http://wangziluning.com/images/Picture004.jpg',
         'http://wangziluning.com/images/Picture005.jpg',
-		'http://wangziluning.com/images/Picture006.jpg',
+	'http://wangziluning.com/images/Picture006.jpg',
         'http://wangziluning.com/images/Picture007.jpg',
         'http://wangziluning.com/images/Picture008.jpg',
         'http://wangziluning.com/images/Picture009.jpg',
@@ -852,6 +853,7 @@ window.onload = function() {
         'http://wangziluning.com/images/Picture036.jpg',
         'http://wangziluning.com/images/Picture038.jpg',
         'http://wangziluning.com/images/Picture041.jpg',
+        'http://wangziluning.com/images/Picture042.jpg',
         'http://wangziluning.com/images/Picture043.jpg',
         'http://wangziluning.com/images/Picture046.jpg',
         'http://wangziluning.com/images/Picture047.jpg',

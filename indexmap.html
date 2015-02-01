@@ -183,9 +183,9 @@ function loopWin(loopList, time, callback) {
         infoWindow.redraw();
         i++;
         if( loopList[i] ) {
-            var time = loopList[i].timeout || 2000;
+            var time = loopList[i].timeout || 3000;
         } else {
-            var time = 2000;
+            var time = 3000;
         }
         timeout = setTimeout(loopWinInner, time);
     }
@@ -558,678 +558,114 @@ function wannaTo() {
 }
 
 var markerText = [
-    {
-        lng : 80.050373,
-        lat : 39.924749
-    },
-    {
-        lng : 80.064171,
-        lat : 39.832612
-    },
-    {
-        lng : 80.064171,
-        lat : 39.747453
-    },
-    {
-        lng : 80.054973,
-        lat : 39.647966
-    },
-    {
-        lng : 80.031976,
-        lat : 39.566136
-    },
-    {
-        lng : 80.022777,
-        lat : 39.469951
-    },
-    {
-        lng : 79.990582,
-        lat : 39.366491
-    },
-    {
-        lng : 79.93539,
-        lat : 39.273603
-    },
-    {
-        lng : 79.875599,
-        lat : 39.216379
-    },
-    {
-        lng : 80.165356,
-        lat : 39.697727
-    },
-    {
-        lng : 80.289538,
-        lat : 39.70128
-    },
-    {
-        lng : 80.427518,
-        lat : 39.708386
-    },
-    {
-        lng : 80.537902,
-        lat : 39.708386
-    },
-    {
-        lng : 80.666683,
-        lat : 39.711938
-    },
-    {
-        lng : 80.795464,
-        lat : 39.715491
-    },
-    {
-        lng : 80.123962,
-        lat : 39.402184
-    },
-    {
-        lng : 80.271141,
-        lat : 39.420024
-    },
-    {
-        lng : 80.418319,
-        lat : 39.423591
-    },
-    {
-        lng : 80.570097,
-        lat : 39.423591
-    },
-    {
-        lng : 80.726474,
-        lat : 39.427159
-    },
-    {
-        lng : 80.873652,
-        lat : 39.434292
-    },
-    {
-        lng : 81.039228,
-        lat : 39.434292
-    },
-    {
-        lng : 80.501107,
-        lat : 40.105115
-    },
-    {
-        lng : 80.501107,
-        lat : 40.01676
-    },
-    {
-        lng : 80.501107,
-        lat : 39.921207
-    },
-    {
-        lng : 80.501107,
-        lat : 39.829066
-    },
-    {
-        lng : 80.496508,
-        lat : 39.623071
-    },
-    {
-        lng : 80.496508,
-        lat : 39.544773
-    },
-    {
-        lng : 80.491908,
-        lat : 39.370061
-    },
-    {
-        lng : 80.491908,
-        lat : 39.255725
-    },
-    {
-        lng : 80.491908,
-        lat : 39.166269
-    },
-    {
-        lng : 80.491908,
-        lat : 39.087453
-    },
-    {
-        lng : 79.820407,
-        lat : 39.015724
-    },
-    {
-        lng : 79.949188,
-        lat : 39.008548
-    },
-    {
-        lng : 80.100966,
-        lat : 39.030076
-    },
-    {
-        lng : 80.252744,
-        lat : 39.030076
-    },
-    {
-        lng : 80.41372,
-        lat : 39.030076
-    },
-    {
-        lng : 80.611491,
-        lat : 39.051598
-    },
-    {
-        lng : 80.744871,
-        lat : 39.05877
-    },
-    {
-        lng : 80.924245,
-        lat : 39.05877
-    },
-    {
-        lng : 81.089821,
-        lat : 39.073113
-    },
-    {
-        lng : 81.517558,
-        lat : 39.775851
-    },
-    {
-        lng : 81.517558,
-        lat : 39.708386
-    },
-    {
-        lng : 81.512958,
-        lat : 39.605284
-    },
-    {
-        lng : 81.512958,
-        lat : 39.480645
-    },
-    {
-        lng : 81.494561,
-        lat : 39.38434
-    },
-    {
-        lng : 81.494561,
-        lat : 39.262877
-    },
-    {
-        lng : 81.632541,
-        lat : 39.81488
-    },
-    {
-        lng : 81.738325,
-        lat : 39.811332
-    },
-    {
-        lng : 81.867106,
-        lat : 39.811332
-    },
-    {
-        lng : 82.018884,
-        lat : 39.804238
-    },
-    {
-        lng : 82.018884,
-        lat : 39.704833
-    },
-    {
-        lng : 82.023483,
-        lat : 39.598168
-    },
-    {
-        lng : 82.023483,
-        lat : 39.502027
-    },
-    {
-        lng : 82.028083,
-        lat : 39.395047
-    },
-    {
-        lng : 82.023483,
-        lat : 39.320062
-    },
-    {
-        lng : 82.018884,
-        lat : 39.24142
-    },
-    {
-        lng : 81.853308,
-        lat : 39.219957
-    },
-    {
-        lng : 81.696931,
-        lat : 39.230689
-    },
-    {
-        lng : 81.56815,
-        lat : 39.234266
-    },
-    {
-        lng : 81.63714,
-        lat : 39.530527
-    },
-    {
-        lng : 81.765921,
-        lat : 39.530527
-    },
-    {
-        lng : 81.903901,
-        lat : 39.530527
-    },
-    {
-        lng : 82.621395,
-        lat : 40.020297
-    },
-    {
-        lng : 82.621395,
-        lat : 39.921207
-    },
-    {
-        lng : 82.621395,
-        lat : 39.811332
-    },
-    {
-        lng : 82.621395,
-        lat : 39.708386
-    },
-    {
-        lng : 82.616796,
-        lat : 39.605284
-    },
-    {
-        lng : 82.621395,
-        lat : 39.459255
-    },
-    {
-        lng : 82.621395,
-        lat : 39.35935
-    },
-    {
-        lng : 82.607598,
-        lat : 39.24142
-    },
-    {
-        lng : 82.607598,
-        lat : 39.159108
-    },
-    {
-        lng : 82.483416,
-        lat : 39.647966
-    },
-    {
-        lng : 82.446621,
-        lat : 39.555455
-    },
-    {
-        lng : 82.391429,
-        lat : 39.469951
-    },
-    {
-        lng : 82.736379,
-        lat : 39.687067
-    },
-    {
-        lng : 82.79617,
-        lat : 39.59461
-    },
-    {
-        lng : 82.846762,
-        lat : 39.519841
-    },
-    {
-        lng : 82.984742,
-        lat : 39.829066
-    },
-    {
-        lng : 83.122722,
-        lat : 39.832612
-    },
-    {
-        lng : 83.260702,
-        lat : 39.836158
-    },
-    {
-        lng : 83.398681,
-        lat : 39.846795
-    },
-    {
-        lng : 83.486068,
-        lat : 39.860975
-    },
-    {
-        lng : 83.509065,
-        lat : 39.775851
-    },
-    {
-        lng : 83.495267,
-        lat : 39.694174
-    },
-    {
-        lng : 83.47227,
-        lat : 39.626628
-    },
-    {
-        lng : 82.966345,
-        lat : 39.544773
-    },
-    {
-        lng : 83.150318,
-        lat : 39.551895
-    },
-    {
-        lng : 83.283698,
-        lat : 39.551895
-    },
-    {
-        lng : 83.426277,
-        lat : 39.559016
-    },
-    {
-        lng : 83.578055,
-        lat : 39.559016
-    },
-    {
-        lng : 83.711435,
-        lat : 39.569696
-    },
-    {
-        lng : 83.2699,
-        lat : 40.140424
-    },
-    {
-        lng : 83.251503,
-        lat : 40.066253
-    },
-    {
-        lng : 83.237705,
-        lat : 39.97077
-    },
-    {
-        lng : 83.187112,
-        lat : 39.754553
-    },
-    {
-        lng : 83.145718,
-        lat : 39.658632
-    },
-    {
-        lng : 83.095126,
-        lat : 39.47708
-    },
-    {
-        lng : 83.072129,
-        lat : 39.337923
-    },
-    {
-        lng : 83.021537,
-        lat : 39.216379
-    },
-    {
-        lng : 82.99854,
-        lat : 39.159108
-    },
-    {
-        lng : 83.219308,
-        lat : 39.47708
-    },
-    {
-        lng : 83.315893,
-        lat : 39.387909
-    },
-    {
-        lng : 83.380284,
-        lat : 39.312917
-    },
-    {
-        lng : 83.47687,
-        lat : 39.259301
-    },
-    {
-        lng : 83.596452,
-        lat : 39.202065
-    },
-    {
-        lng : 84.714088,
-        lat : 40.249767
-    },
-    {
-        lng : 84.626701,
-        lat : 40.228618
-    },
-    {
-        lng : 84.49332,
-        lat : 40.179244
-    },
-    {
-        lng : 84.364539,
-        lat : 40.151014
-    },
-    {
-        lng : 84.240358,
-        lat : 40.112178
-    },
-    {
-        lng : 84.148371,
-        lat : 40.080387
-    },
-    {
-        lng : 84.111577,
-        lat : 39.992
-    },
-    {
-        lng : 84.139172,
-        lat : 39.914124
-    },
-    {
-        lng : 84.198964,
-        lat : 39.818426
-    },
-    {
-        lng : 84.014991,
-        lat : 39.690621
-    },
-    {
-        lng : 84.175967,
-        lat : 39.708386
-    },
-    {
-        lng : 84.318546,
-        lat : 39.751003
-    },
-    {
-        lng : 84.479522,
-        lat : 39.743902
-    },
-    {
-        lng : 84.612903,
-        lat : 39.772302
-    },
-    {
-        lng : 84.810674,
-        lat : 39.782949
-    },
-    {
-        lng : 84.976249,
-        lat : 39.807785
-    },
-    {
-        lng : 85.114229,
-        lat : 39.829066
-    },
-    {
-        lng : 84.589906,
-        lat : 40.101583
-    },
-    {
-        lng : 84.589906,
-        lat : 40.009687
-    },
-    {
-        lng : 84.589906,
-        lat : 39.892869
-    },
-    {
-        lng : 84.580708,
-        lat : 39.676405
-    },
-    {
-        lng : 84.571509,
-        lat : 39.519841
-    },
-    {
-        lng : 84.571509,
-        lat : 39.362921
-    },
-    {
-        lng : 84.576108,
-        lat : 39.255725
-    },
-    {
-        lng : 84.576108,
-        lat : 39.166269
-    },
-    {
-        lng : 84.465724,
-        lat : 39.64441
-    },
-    {
-        lng : 84.350741,
-        lat : 39.566136
-    },
-    {
-        lng : 84.240358,
-        lat : 39.480645
-    },
-    {
-        lng : 84.024189,
-        lat : 39.35578
-    },
-    {
-        lng : 84.139172,
-        lat : 39.427159
-    },
-    {
-        lng : 84.695691,
-        lat : 39.694174
-    },
-    {
-        lng : 84.815273,
-        lat : 39.605284
-    },
-    {
-        lng : 84.916458,
-        lat : 39.516279
-    },
-    {
-        lng : 85.036041,
-        lat : 39.452124
-    },
-    {
-        lng : 85.123428,
-        lat : 39.402184
-    },
-    {
-        lng : 85.224613,
-        lat : 39.352209
-    },
-    {
-        lng : 85.376391,
-        lat : 39.298623
-    },
-    {
-        lng : 85.500572,
-        lat : 39.373631
-    },
-    {
-        lng : 85.51437,
-        lat : 39.537651
-    },
-    {
-        lng : 85.348795,
-        lat : 39.555455
-    },
-    {
-        lng : 85.24761,
-        lat : 39.480645
-    },
-    {
-        lng : 81.407174,
-        lat : 40.573219
-    },
-    {
-        lng : 81.250797,
-        lat : 40.618798
-    },
-    {
-        lng : 81.103618,
-        lat : 40.639824
-    },
-    {
-        lng : 80.95644,
-        lat : 40.63632
-    },
-    {
-        lng : 80.901248,
-        lat : 40.562697
-    },
-    {
-        lng : 80.951841,
-        lat : 40.47143
-    },
-    {
-        lng : 81.057625,
-        lat : 40.383557
-    },
-    {
-        lng : 81.204804,
-        lat : 40.327257
-    },
-    {
-        lng : 81.388777,
-        lat : 40.306132
-    },
-    {
-        lng : 81.526756,
-        lat : 40.288523
-    },
-    {
-        lng : 81.696931,
-        lat : 40.277955
-    },
-    {
-        lng : 81.526756,
-        lat : 40.65734
-    },
-    {
-        lng : 81.563551,
-        lat : 40.804295
-    },
-    {
-        lng : 81.696931,
-        lat : 40.846222
-    },
-    {
-        lng : 81.830312,
-        lat : 40.83225
-    },
-    {
-        lng : 81.922298,
-        lat : 40.751849
-    },
-    {
-        lng : 81.926898,
-        lat : 40.653837
-    },
-    {
-        lng : 81.9131,
-        lat : 40.552172
-    },
-    {
-        lng : 81.885504,
-        lat : 40.48548
-    },
-    {
-        lng : 81.848709,
-        lat : 40.387074
-    },
-    {
-        lng : 81.793517,
-        lat : 40.313174
-    }
+    			{
+                    title: '认识你之后，这是我的变化',
+                    content: '<img src="http://wangziluning.com/images/Picture002.jpg" width="384" height="362" alt="wannaTo" />',
+                    point: {lng: 118.790507, lat: 32.048055},
+                    flag :true
+                },
+                {
+                    title: '高跟鞋！？我没看错吧！感谢赵小猫分享的好货',
+                    content: '<img src="http://wangziluning.com/images/Picture004.jpg" width="217" height="384" alt="wannaTo" />',
+                    point: {lng: 118.837032, lat: 32.027686},
+                    flag :true
+                },
+                {
+                    title: '因为你告诉我他叫xx狂魔导致我再也不能正视他',
+                    content: '<img src="http://wangziluning.com/images/Picture003.jpg" width="257" height="341" alt="wannaTo" />',
+                    point: {lng: 118.73613, lat: 32.053126},
+                    flag :true
+                },
+                {
+                    title: '过年压马路遇到的拉风狗狗',
+                    content: '<img src="http://wangziluning.com/images/Picture011.jpg" width="228" height="304" alt="wannaTo" />',
+                    point: {lng: 118.867741, lat: 32.088167},
+                    flag :true
+                },
+                {
+                    title: '艾尚刚开的时候还比较喜欢这家店，但随后人多了就不愿意去了',
+                    content: '<img src="http://wangziluning.com/images/Picture017.jpg" width="274" height="370" alt="wannaTo" />',
+                    point: {lng: 118.715172, lat: 32.095972},
+                    flag :true
+                },
+                {
+                    title: '买买买！还记得我买了送给你之后你妈还吐槽我说：你干嘛买给她',
+                    content: '<img src="http://wangziluning.com/images/Picture022.jpg" width="240" height="320" alt="wannaTo" />',
+                    point: {lng: 118.791319, lat: 31.992881},
+                    flag :true
+                },
+                {
+                    title: '难得做成一个卖相不错的面',
+                    content: '<img src="http://wangziluning.com/images/Picture023.jpg" width="279" height="373" alt="wannaTo" />',
+                    point: {lng: 118.754771, lat: 32.114373},
+                    flag :true
+                },
+                {
+                    title: '那次随手折出来的，感觉你还蛮开心的',
+                    content: '<img src="http://wangziluning.com/images/Picture024.jpg" width="280" height="373" alt="wannaTo" />',
+                    point: {lng: 118.769698, lat: 32.093481},
+                    flag :true
+                },
+                {
+                    title: '女汉子在吃南大地锅鸡',
+                    content: '<img src="http://wangziluning.com/images/Picture032.jpg" width="212" height="372" alt="wannaTo" />',
+                    point: {lng: 118.849032, lat: 32.044974},
+                    flag :true
+                },
+                {
+                    title: '宁南那边的真来斯，你喜欢这里的鸭头',
+                    content: '<img src="http://wangziluning.com/images/Picture035.jpg" width="238" height="320" alt="wannaTo" />',
+                    point: {lng: 118.755753, lat: 32.028656},
+                    flag :true
+                },
+                {
+                    title: '高大上的黎巴嫩巧克力，你让我跑马拉松的时候吃',
+                    content: '<img src="http://wangziluning.com/images/Picture042.jpg" width="217" height="384" alt="wannaTo" />',
+                    point: {lng: 118.792737, lat: 32.081417},
+                    flag :true
+                },
+                {
+                    title: '土豪吃面',
+                    content: '<img src="http://wangziluning.com/images/Picture046.jpg" width="384" height="271" alt="wannaTo" />',
+                    point: {lng: 118.866228, lat: 32.111385},
+                    flag :true
+                },
+                {
+                    title: '我们下飞机时已是你生日的凌晨，你肯定没想到打开后备箱会发现蛋糕和花吧！！！',
+                    content: '<img src="http://wangziluning.com/images/Picture047.jpg" width="384" height="271" alt="wannaTo" />',
+                    point: {lng: 118.728634, lat: 32.111821},
+                    flag :true
+                },
+                {
+                    title: '最近的新欢姜氏烧烤',
+                    content: '<img src="http://wangziluning.com/images/Picture049.jpg" width="288" height="389" alt="wannaTo" />',
+                    point: {lng: 118.818422, lat: 32.010752},
+                    flag :true
+                },
+                {
+                    title: '炮筒子你抢镜了！',
+                    content: '<img src="http://wangziluning.com/images/Picture074.jpg" width="373" height="279" alt="wannaTo" />',
+                    point: {lng: 118.770372, lat: 32.009953},
+                    flag :true
+                },
+                {
+                    title: '这是被北京干燥的天气玩坏了的王总',
+                    content: '<img src="http://wangziluning.com/images/Picture076.jpg" width="336" height="250" alt="wannaTo" />',
+                    point: {lng: 118.722436, lat: 32.074606},
+                    flag :true
+                },
+                {
+                    title: '陪你去开中药，金蝉！！！',
+                    content: '<img src="http://wangziluning.com/images/Picture081.jpg" width="240" height="320" alt="wannaTo" />',
+                    point: {lng: 118.825402, lat: 32.094702},
+                    flag :true
+                },
+                {
+                    title: '你很喜欢这件衣服吧',
+                    content: '<img src="http://wangziluning.com/images/Picture083.jpg" width="256" height="341" alt="wannaTo" />',
+                    point: {lng: 118.840296, lat: 32.107629},
+                    flag :true
+                }
 ];
 
 function addMarker(lng, lat) {
@@ -1252,22 +688,41 @@ function loopAddMarker(markers, callback) {
     var loop        = '';
     function loopAddMarkerInner() {
         if( i == len ) {
+        	map.closeInfoWindow();
+        	map.panTo(new BMap.Point(118.790507,32.048055));
             clearTimeout(loop);
-            callback();
+            setTimeout(callback(), 2000)
             return false;
         }
-        addMarker(markers[i].lng, markers[i].lat);
-        i++;
-        loop = setTimeout(loopAddMarkerInner, 300);
+        
+        if(markers[i].flag == true){
+        	var opts = {
+                    title: loopList[i].title,
+                    maxWidth: 600,
+                    height: 0
+                }
+            var infoWindow = new BMap.InfoWindow(markers[i].content, opts);
+            map.openInfoWindow(infoWindow, new BMap.Point(markers[i].point.lng, markers[i].point.lat));
+            infoWindow.redraw();
+            setTimeout(function(){ 
+            	addMarker(markers[i].point.lng, markers[i].point.lat);
+                i++;
+                loop = setTimeout(loopAddMarkerInner, 300);
+            },3000);
+        }else {
+        	addMarker(markers[i].point.lng, markers[i].point.lat);
+            i++;
+            loop = setTimeout(loopAddMarkerInner, 300);
+        }
     }
     loopAddMarkerInner();
 }
 
 function showMarkerText() {
     map.closeInfoWindow();
-    map.panTo(new BMap.Point(82.699584, 39.8202));
+    map.panTo(new BMap.Point(118.790507,32.048055));
     setTimeout(function() {
-        zoomTo(9, 1000, function() {
+        zoomTo(13, 1000, function() {
             loopAddMarker(markerText, function() {
                 setTimeout(function() {
                     slideDown('theEnd', 500, function() {
@@ -1363,6 +818,8 @@ window.onload = function() {
         'http://wangziluning.com/images/Hongkong1.jpg',
         'http://wangziluning.com/images/Hongkong2.jpg',
         'http://wangziluning.com/images/HongKong3.jpg',
+        'http://wangziluning.com/images/HongKong4.jpg',
+        'http://wangziluning.com/images/HongKong5.jpg',
         'http://wangziluning.com/images/huangshan1.jpg',
         'http://wangziluning.com/images/huangshan2.jpg',
         'http://wangziluning.com/images/huangshan3.jpg',
@@ -1377,18 +834,28 @@ window.onload = function() {
         'http://wangziluning.com/images/Picture007.jpg',
         'http://wangziluning.com/images/Picture008.jpg',
         'http://wangziluning.com/images/Picture009.jpg',
+        'http://wangziluning.com/images/Picture011.jpg',
         'http://wangziluning.com/images/Picture012.jpg',
         'http://wangziluning.com/images/Picture014.jpg',
         'http://wangziluning.com/images/Picture016.jpg',
+        'http://wangziluning.com/images/Picture017.jpg',
         'http://wangziluning.com/images/Picture018.jpg',
         'http://wangziluning.com/images/Picture021.jpg',
+        'http://wangziluning.com/images/Picture022.jpg',
+        'http://wangziluning.com/images/Picture023.jpg',
+        'http://wangziluning.com/images/Picture024.jpg',
         'http://wangziluning.com/images/Picture030.jpg',
         'http://wangziluning.com/images/Picture028.jpg',
+        'http://wangziluning.com/images/Picture032.jpg',
+        'http://wangziluning.com/images/Picture034.jpg',
         'http://wangziluning.com/images/Picture034.jpg',
         'http://wangziluning.com/images/Picture036.jpg',
         'http://wangziluning.com/images/Picture038.jpg',
         'http://wangziluning.com/images/Picture041.jpg',
         'http://wangziluning.com/images/Picture043.jpg',
+        'http://wangziluning.com/images/Picture046.jpg',
+        'http://wangziluning.com/images/Picture047.jpg',
+        'http://wangziluning.com/images/Picture049.jpg',
         'http://wangziluning.com/images/Picture050.jpg',
         'http://wangziluning.com/images/Picture051.jpg',
         'http://wangziluning.com/images/Picture056.jpg',
@@ -1397,10 +864,14 @@ window.onload = function() {
         'http://wangziluning.com/images/Picture068.jpg',
         'http://wangziluning.com/images/Picture069.jpg',
         'http://wangziluning.com/images/Picture071.jpg',
+        'http://wangziluning.com/images/Picture074.jpg',
         'http://wangziluning.com/images/Picture075.jpg',
+        'http://wangziluning.com/images/Picture076.jpg',
         'http://wangziluning.com/images/Picture077.jpg',
         'http://wangziluning.com/images/Picture079.jpg',
-        'http://wangziluning.com/images/Picture080.jpg'
+        'http://wangziluning.com/images/Picture080.jpg',
+        'http://wangziluning.com/images/Picture081.jpg',
+        'http://wangziluning.com/images/Picture083.jpg'
     ];
 
     soundManager.setup({
